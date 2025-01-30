@@ -1,0 +1,106 @@
+/* Admin Dashboard */
+.dashboard {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sales Analytics */
+  .sales-analytics {
+    padding: 20px;
+  }
+  
+  .sales-analytics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .sales-analytics th,
+  .sales-analytics td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sales-analytics th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Voucher Creation */
+  .voucher-creation {
+    padding: 20px;
+  }
+  
+  .voucher-creation form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .voucher-creation label {
+    margin: 10px 0 5px;
+  }
+  
+  .voucher-creation input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .voucher-creation button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .voucher-creation button:hover {
+    background-color: #218838;
+  }
+  
+  .success-message {
+    color: #28a745;
+  }
+  
+  .error-message {
+    color: #dc3545;
+  }
+  

@@ -1,0 +1,133 @@
+/* Home.css */
+
+/* Container for the entire page */
+.home-page .home-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/* Styling for the search bar */
+.home-page .search-bar {
+    margin-top: 40px; /* Added margin-top to shift the search bar lower */
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the category dropdown */
+.home-page .category-dropdown {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Container for the recipes grid */
+.home-page .recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+}
+
+/* Individual recipe box */
+.home-page .recipe-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for the recipe box */
+.home-page .recipe-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images inside the recipe box */
+.home-page .recipe-image {
+    width: 100%;
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* General button styling */
+.home-page .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Like button specific styles */
+.home-page .like-button {
+    background-color: #ccc;
+}
+
+/* Navbar styling */
+.home-page .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-page .navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.home-page .navbar-logo img {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.home-page .navbar-logo img:hover {
+    transform: scale(1.1);
+}
+
+.home-page .navbar-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.home-page .navbar-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.home-page .navbar-button:hover {
+    background-color: #45a049;
+}
+
+/* Button active state (when a user clicks it) */
+.home-page .navbar-button:active {
+    transform: scale(0.98);
+    background-color: #388e3c;
+}

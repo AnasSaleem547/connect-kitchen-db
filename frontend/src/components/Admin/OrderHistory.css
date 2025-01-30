@@ -1,0 +1,236 @@
+/* Main container for order history */
+.order-history {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title of the page */
+.order-history h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Loading or no orders message */
+.order-history .loading,
+.order-history .no-orders {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Container for the orders list, which will be scrollable */
+.orders-list {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;  /* Enables scrolling if content overflows */
+  margin-bottom: 20px;
+}
+
+/* Styling for each order item */
+.order-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Order item content */
+.order-item .order-id,
+.order-item .status {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: bold;
+}
+
+/* Style for order ID */
+.order-item .order-id {
+  color: #2b2b2b;
+}
+
+/* Style for order status */
+.order-item .status {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.order-item .status.pending {
+  color: #ffa500;
+}
+
+.order-item .status.completed {
+  color: #28a745;
+}
+
+.order-item .status.cancelled {
+  color: #dc3545;
+}
+
+/* Styling for the no orders case */
+.order-history .no-orders {
+  text-align: center;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-history {
+    margin: 1rem;
+    padding: 15px;
+  }
+
+  .order-history h4 {
+    font-size: 1.5rem;
+  }
+
+  .order-item {
+    flex-direction: column; /* Stack order details in a column for small screens */
+    padding: 10px;
+  }
+
+  .order-item .order-id,
+  .order-item .status {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+
+/* Styling for OrderHistory component */
+.order-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.order-list {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;  /* Adds scroll when there are many orders */
+}
+
+.order-item {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.order-item p {
+  margin: 5px 0;
+}
+
+.order-item strong {
+  color: #333;
+}
+
+/* Container for Order History page */
+.order-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* The container that holds the order list with scrollbar */
+.order-list {
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;  /* Enables scrolling */
+  padding-right: 10px;  /* Space for scrollbar */
+}
+
+/* Individual Order Item Styling */
+.order-item {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to highlight the order */
+.order-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for each order details paragraph */
+.order-item p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Bold text for labels in order details */
+.order-item strong {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Styling for 'No orders found' and error message */
+.error-message, .no-orders-message {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Styling for 'Loading...' text */
+.loading-message {
+  color: #f39c12;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .order-history-container {
+    padding: 15px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .order-item {
+    padding: 15px;
+  }
+
+  .order-item p {
+    font-size: 13px;
+  }
+}

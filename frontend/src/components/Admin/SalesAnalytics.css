@@ -1,0 +1,57 @@
+/* Main container for the entire page */
+.sales-analytics-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title of the page */
+.sales-analytics-container h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Loading, error, and empty data messages */
+.sales-analytics-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Container for the chart */
+.chart-container {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the chart */
+.chart-container canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 10px;
+}
+
+/* Style for the error message */
+.sales-analytics-container .error {
+  color: #ff6347;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Additional padding for chart if no data */
+.sales-analytics-container .no-data {
+  padding-top: 50px;
+  color: #888;
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+/* Apply background globally */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('/public/background.jpeg'); /* Ensure the correct path */
+  background-size: cover; /* Ensure the image covers the viewport */
+  background-repeat: no-repeat; /* Prevent multiple images */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Cover the full viewport */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#root {
+  height: 100%; /* Ensure the root container inherits full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbot-container {
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  border-left: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+/* Chat history area */
+.chat-history {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Individual chat bubbles */
+.chat-bubble {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.user-bubble {
+  background-color: #d1e7ff;
+  margin-left: auto;
+}
+
+.bot-bubble {
+  background-color: #f1f1f1;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-area button {
+  width: 15%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+

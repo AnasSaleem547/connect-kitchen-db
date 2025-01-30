@@ -1,0 +1,141 @@
+/* General Styles */
+.notifications {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Empty State */
+  .notifications p {
+    font-size: 18px;
+    text-align: center;
+    color: #888;
+  }
+  
+  /* List of Notifications */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .order-details {
+    margin-bottom: 15px;
+  }
+  
+  .order-details p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .order-details strong {
+    color: #333;
+  }
+  
+  /* Cart Items */
+  .cart-items {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .cart-items h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .cart-items ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .cart-items li {
+    margin-bottom: 8px;
+  }
+  
+  .cart-items li p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Buttons */
+  button {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button.accept {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  button.accept:hover {
+    background-color: #218838;
+  }
+  
+  button.reject {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button.reject:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .notifications {
+      padding: 15px;
+    }
+  
+    .notifications h2 {
+      font-size: 20px;
+    }
+  
+    .order-details p {
+      font-size: 14px;
+    }
+  
+    .cart-items h4 {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  

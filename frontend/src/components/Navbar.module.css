@@ -1,0 +1,140 @@
+/* Navbar.module.css */
+
+/* General styling for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Distributes items with logo on left and buttons on right */
+    align-items: center;
+    position: fixed; /* Fixed at the top of the screen */
+    top: 0; /* Aligns to the top of the viewport */
+    left: 0;
+    width: 100%; /* Ensures the navbar spans across the entire screen */
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+/* Add a top padding to the body or main content so the navbar doesn't overlap the page content */
+body {
+    margin-top: 70px; /* Adjust this based on your navbar's height */
+}
+
+/* Logo styling */
+.navbarLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo img {
+    height: 50px; /* Adjust the size as needed */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbarLogo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Navbar buttons container */
+.navbarMenu {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Styling for each navbar button */
+.navbarButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Button hover effect */
+.navbarButton:hover {
+    background-color: #45a049;
+}
+
+/* Button active state (when a user clicks it) */
+.navbarButton:active {
+    transform: scale(0.98);
+    background-color: #388e3c;
+}
+
+/* Profile dropdown container */
+.profileDropdown {
+    position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Places dropdown below the Profile button */
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* Dropdown item styles */
+.dropdownItem {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdownItem:hover {
+    background-color: #45a049;
+}
+
+/* Show dropdown on hover */
+.profileDropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* Styling for the logout button */
+.navbarButtonLogout {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Button hover effect */
+.navbarButtonLogout:hover {
+    background-color: #e53935;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .navbarMenu {
+        flex-direction: column; /* Stack the buttons vertically on smaller screens */
+        align-items: center;
+    }
+
+    .navbarLogo img {
+        height: 40px; /* Adjust logo size for smaller screens */
+    }
+
+    .navbarButton {
+        width: 100%; /* Make buttons full width on small screens */
+        padding: 12px;
+        text-align: center;
+    }
+}

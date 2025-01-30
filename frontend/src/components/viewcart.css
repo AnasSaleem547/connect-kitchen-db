@@ -1,0 +1,195 @@
+/* General Styles */
+.notifications {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #ddd; /* Light border for defining boundaries */
+}
+
+/* Card Box - Overall Cart Box */
+.cart-card {
+  background-color: #ffffff; /* White background for the card */
+  padding: 20px; /* Padding for inner space */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow for depth */
+  margin-bottom: 30px; /* Bottom margin for separation */
+}
+
+/* Heading and Titles */
+.notifications h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-header {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Empty State */
+.notifications p {
+  font-size: 18px;
+  text-align: center;
+  color: #888;
+}
+
+/* List of Notifications */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.order-details {
+  margin-bottom: 15px;
+}
+
+.order-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+.order-details strong {
+  color: #333;
+}
+
+/* Cart Items */
+.cart-items {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9; /* Subtle background for the cart section */
+}
+
+.cart-items h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.cart-items ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cart-items li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #ffffff; /* White background for each item */
+  border: 1px solid #eee; /* Light border for separation */
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.cart-items li:hover {
+  background-color: #f9f9f9; /* Light hover effect */
+}
+
+.cart-items li p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 'Your Cart' and Total Styles */
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.total-section p {
+  color: #333;
+}
+
+.total-section span {
+  color: #28a745; /* Green color for total value */
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.accept {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.accept:hover {
+  background-color: #218838;
+}
+
+button.reject {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.reject:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .notifications {
+    padding: 15px;
+  }
+
+  .notifications h2 {
+    font-size: 20px;
+  }
+
+  .order-details p {
+    font-size: 14px;
+  }
+
+  .cart-items h4 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,48 @@
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 100%; /* Match the height of the root */
+}
+
+.landing-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white overlay */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Limit the width */
+}
+
+.landing-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.landing-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.landing-buttons {
+    display: flex;
+    gap: 20px; /* Add spacing between buttons */
+    justify-content: center;
+}
+
+.landing-buttons .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.landing-buttons .btn:hover {
+    background-color: #21a1f1;
+}

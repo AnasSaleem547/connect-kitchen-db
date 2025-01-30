@@ -1,0 +1,123 @@
+/* AddRecipe.css */
+
+/* Styling for the container of the AddRecipe page */
+.add-recipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light background color for the page */
+    padding: 20px;
+}
+
+/* Styling for the form wrapper to give a white background with box shadow */
+.add-recipe-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 600px; /* Adjust this value as needed */
+}
+
+/* Heading styling */
+.add-recipe-box h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling for the error and success messages */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form element styling */
+.add-recipe-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-recipe-box form div {
+    margin-bottom: 15px;
+}
+
+.add-recipe-box form label {
+    font-weight: bold;
+}
+
+.add-recipe-box form input,
+.add-recipe-box form select,
+.add-recipe-box form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-recipe-box form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Ingredients section styling */
+.add-recipe-box .ingredients-container {
+    margin-top: 20px;
+}
+
+.add-recipe-box .ingredients-container input {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.add-recipe-box .ingredients-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0a5193;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-recipe-box .ingredients-container button:hover {
+    background-color: #084a74;
+}
+
+.add-recipe-box .ingredients-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.add-recipe-box .ingredients-container ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Submit button styling */
+.add-recipe-box button[type="submit"] {
+    padding: 10px;
+    background-color: #0a5193;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-recipe-box button[type="submit"]:hover {
+    background-color: #084a74;
+}

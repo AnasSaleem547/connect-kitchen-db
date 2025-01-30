@@ -1,0 +1,126 @@
+/* Container for the entire ViewComments page */
+.view-comments-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the page */
+.view-comments-container h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles for the comments section */
+.comments-list {
+    max-height: 500px; /* Set max height to make it scrollable */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-right: 10px; /* Adds some space for the scrollbar */
+}
+
+/* Individual comment item */
+.comment-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styles for the comment details */
+.comment-item p {
+    margin: 5px 0;
+}
+
+/* Bold labels for the comment details */
+.comment-item p strong {
+    font-weight: bold;
+}
+
+/* Container for the comment content */
+.comment-content {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Button for deleting a comment */
+.delete-comment-btn {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-comment-btn:hover {
+    background-color: #ff7875;
+}
+
+/* Confirm deletion dialog styling */
+.confirm-deletion-dialog {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dialog-box .btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dialog-box .btn-confirm {
+    background-color: #ff4d4f;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-box .btn-confirm:hover {
+    background-color: #ff7875;
+}
+
+.dialog-box .btn-cancel {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-box .btn-cancel:hover {
+    background-color: #d9d9d9;
+}
+
+
